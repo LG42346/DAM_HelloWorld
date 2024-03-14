@@ -1,6 +1,8 @@
 package dam.a42346.helloworld
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,5 +20,11 @@ class MainActivity : AppCompatActivity() {
         }
         println(this@MainActivity.localClassName + " onCreate")
         println(getString(R.string.activity_oncreate_msg, this@MainActivity.localClassName))
+    }
+
+    fun smileClick(view: View) {
+        //goto OSBuild activity
+        val intent = Intent(this, OSBuild::class.java)
+        startActivity(intent)
     }
 }

@@ -4,4 +4,7 @@
     <string name="my_first_app">My First App</string>
     <string name="smile_img_alt_text">Just smile</string>
     <string name="activity_oncreate_msg">Activity %1$s onCreate</string>
+
+    <string name="os_build">android.os.Build.getSerial()</string>
+    <string name="os_build_serial">android.os.Build.SERIAL</string>
 </resources>
